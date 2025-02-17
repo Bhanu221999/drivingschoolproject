@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pass IT driving school</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="../asset/fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="../asset/css/adminlte.min.css">
+      <link rel="stylesheet" href="../asset/css/animate.min.css">
+      <link rel="stylesheet" href="../asset/css/style.css">
+      <style>
+        #logo {
+      margin-left: -45px; /* Adjust this value as needed */
+      margin-bottom: -20px;
+    }
+    
+    </style>
+
+   </head>
+   <body class="hold-transition sidebar-mini layout-fixed">
+      <div class="wrapper">
+         <!-- Navbar -->
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="fullscreen" href="../login/first.html">
+                  <i class="fas fa-power-off"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- /.navbar -->
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgba(62,88,113);">
+                        <!-- Brand Logo -->
+            <a href="index.html" class="brand-link animated swing">
+                <img id="logo" src="../asset/img/emirates logo.jpeg" alt="DSMS Logo" width="320">
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+               <!-- Sidebar user panel (optional) -->
+               <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                  <div class="image">
+                     <img src="../asset/img/profile1.png" class="img-circle elevation-2" alt="User Image">
+                  </div>
+                  <div class="info">
+                     <a href="#" class="d-block">Bhanu</a>
+                  </div>
+               </div>
+               <!-- Sidebar Menu -->
+               <nav class="mt-2">
+                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                     <li class="nav-item animated bounceInLeft">
+                        <a href="index.html" class="nav-link">
+                           <i class="nav-icon fa fa-tachometer-alt"></i>
+                           <p>
+                              Dashboard
+                           </p>
+                        </a>
+                     </li>
+                     <li class="nav-item animated bounceInRight">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fa fa-users"></i>
+                           <p>
+                              Student
+                           </p>
+                           <i class="right fas fa-angle-left"></i>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                               <a href="add-student.html" class="nav-link">
+                                  <i class="nav-icon fa fa-plus"></i>
+                                  <p>Add</p>
+                               </a>
+                            
+                         </ul>
+                     </li>
+                     <li class="nav-item animated bounceInLeft">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-user"></i>
+                           <p>
+                              Instructor
+                           </p>
+                           <i class="right fas fa-angle-left"></i>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="add-instructor.html" class="nav-link">
+                                 <i class="nav-icon fa fa-plus"></i>
+                                 <p>Add</p>
+                              </a>
+                           
+                        </ul>
+                     </li>
+                     <li class="nav-item animated bounceInRight">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-book"></i>
+                           <p>
+                              Schedule
+                           </p>
+                           <i class="right fas fa-angle-left"></i>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="add-schedule.html" class="nav-link">
+                                 <i class="nav-icon fa fa-plus"></i>
+                                 <p>Add</p>
+                              </a>
+                          
+                        </ul>
+                     </li>
+                     <li class="nav-item animated bounceInLeft">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-file-signature"></i>
+                           <p>
+                              Enrollment
+                           </p>
+                              <i class="right fas fa-angle-left"></i>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="add-enroll.html" class="nav-link">
+                                 <i class="nav-icon fa fa-plus"></i>
+                                 <p>Add</p>
+                              </a>
+                           
+                        </ul>
+                     </li>
+                     <li class="nav-item animated bounceInRight">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-money-bill"></i>
+                           <p>
+                              Payment
+                           </p>
+                              <i class="right fas fa-angle-left"></i>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="add-payment.html" class="nav-link">
+                                 <i class="nav-icon fa fa-plus"></i>
+                                 <p>Add</p>
+                              </a>
+                          
+                        </ul>
+                     </li>
+                  </ul>
+                  </li>
+                  </ul>
+               </nav>
+               <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+         </aside>
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+               <div class="container-fluid">
+                  <div class="row mb-2">
+                     <div class="col-sm-6 animated bounceInRight">
+                        <h1 class="m-0"><span class="fa fa-plus"></span> Add Student</h1>
+                     </div>
+                     <!-- /.col -->
+                     <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                           <li class="breadcrumb-item active">Add Student</li>
+                        </ol>
+                     </div>
+                     <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+               </div>
+               <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <!-- Main content -->
+            <section class="content">
+               <div class="container-fluid">
+                  <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Profile Information</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="row">
+                  <div class="col-md-3">
+
+                  <div class="form-group">
+                     <img src="../asset/img/profile2.jpeg" width="250" style="border-radius: 5px">
+                   
+                 </div>
+                  </div>
+                  <div class="col-md-9">
+                     <div class="card-header">
+                        <span class="fa fa-user"> Profile Information</span>
+              </div>
+                  <div class="row">
+                  <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control" placeholder="first name" required>
+                  </div>
+               </div>
+                  <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Middle Name</label>
+                    <input type="text" class="form-control" placeholder="middle name" required>
+                  </div>
+               </div>
+                  <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text" class="form-control" placeholder="last name" required>
+                  </div>
+               </div>
+                  <div class="col-md-3">
+                  <div class="form-group">
+                        <label>Gender</label>
+                        <select class="form-control">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+               </div>
+                  <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Birthday</label>
+                    <input type="date" class="form-control" placeholder="last name" required>
+                  </div>
+               </div>
+                  <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Contact</label>
+                    <input type="number" class="form-control" placeholder="contact" required>
+                  </div>
+               </div>
+                  <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" placeholder="email" required>
+                  </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Address</label>
+                    <input type="text" class="form-control" placeholder="address" required>
+                  </div>
+               </div>
+
+               <div class="col-md-12">
+                <div class="card-header">
+                    <i class="fas fa-check" style="color: #090909;"></i> Assign
+                </div>
+            </div>
+            
+
+           <div class="col-md-6">
+            <div class="form-group">
+                  <label>Lessons</label>
+                  <select class="form-control" name="lessons">
+                    <option>Introductory  500£</option>
+                    <option>Standard  1000£</option>
+                    <option>Pass-plus  1500£</option>
+                  </select>
+                </div>
+           </div>
+           <div class="col-md-6">
+            <div class="form-group">
+                  <label>Instructor</label>
+                  <select class="form-control" name="instructor" required>
+                    <option>David</option>
+                    <option>Shirley</option>
+                  </select>
+                </div>
+         </div>
+            </div>
+              </div>
+                  </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+              </form>
+            </div>
+               </div>
+               <!-- Add a table to display saved details -->
+               <!-- Add a table to display saved details -->
+<section class="content">
+   <div class="container-fluid">
+       <div class="card">
+           <div class="card-header">
+            <h3 class="card-title">Saved Details</h3>
+         </div>
+         <div class="card-body" style="overflow-x: auto;">
+             <!-- Add a wrapper div to enable horizontal scrolling -->
+             <div style="max-width: 100%; overflow-x: auto;">
+                 <table class="table" id="savedDetails">
+                   <!-- Table headers -->
+                   <thead>
+                       <tr>
+                           <th>First Name</th>
+                           <th>Middle Name</th>
+                           <th>Last Name</th>
+                           <th>Gender</th>
+                           <th>Birthday</th>
+                           <th>Contact</th>
+                           <th>Email</th>
+                           <th>Address</th>
+                           <th>Lessons</th>
+                           <th>Instructor</th>
+                           <th>Action</th>
+                           <!-- Add more table headers for other details -->
+                       </tr>
+                   </thead>
+                   <!-- Table body to be populated after form submission -->
+                   <tbody></tbody>
+               </table>
+           </div>
+       </div>
+   </div>
+</section>
+
+               <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+         </div>
+         <!-- /.content-wrapper -->
+      </div>
+      <!-- ./wrapper -->
+      <!-- jQuery -->
+      <script src="../asset/jquery/jquery.min.js"></script>
+      <script src="../asset/js/adminlte.js"></script>
+      <script>
+         // Function to handle form submission
+         document.querySelector('form').addEventListener('submit', function (e) {
+             e.preventDefault(); // Prevents the default form submission
+     
+             // Get form values
+             const firstName = document.querySelector('input[placeholder="first name"]').value;
+             const middleName = document.querySelector('input[placeholder="middle name"]').value;
+             const lastName = document.querySelector('input[placeholder="last name"]').value;
+             const gender = document.querySelector('select').value;
+             const birthday = document.querySelector('input[type="date"]').value;
+             const contact = document.querySelector('input[placeholder="contact"]').value;
+             const email = document.querySelector('input[placeholder="email"]').value;
+             const address = document.querySelector('input[placeholder="address"]').value;
+             const lessons = document.querySelector('select[name="lessons"]').value; // Use the name attribute
+             const instructor = document.querySelector('select[name="instructor"]').value; // Use the name attribute
+             // Get other form values similarly
+     
+             const table = document.querySelector('#savedDetails');
+             const rows = table.rows;
+     
+             // Check if a row is being edited
+             if (table.getAttribute('data-editing')) {
+                 const editingRowIndex = parseInt(table.getAttribute('data-editing'));
+                 const cells = rows[editingRowIndex].cells;
+     
+                 // Update the edited row with new data
+                 cells[0].innerText = firstName;
+                 cells[1].innerText = middleName;
+                 cells[2].innerText = lastName;
+                 cells[3].innerText = gender;
+                 cells[4].innerText = birthday;
+                 cells[5].innerText = contact;
+                 cells[6].innerText = email;
+                 cells[7].innerText = address;
+                 cells[8].innerText = lessons;
+                 cells[9].innerText = instructor;
+     
+                 // Clear the 'data-editing' attribute
+                 table.removeAttribute('data-editing');
+             } else {
+                 // Create a table row with the entered details
+                 const tableBody = document.querySelector('#savedDetails tbody');
+                 const newRow = document.createElement('tr');
+                 newRow.innerHTML = `
+                     <td>${firstName}</td>
+                     <td>${middleName}</td>
+                     <td>${lastName}</td>
+                     <td>${gender}</td>
+                     <td>${birthday}</td>
+                     <td>${contact}</td>
+                     <td>${email}</td>
+                     <td>${address}</td>
+                     <td>${lessons}</td>
+                     <td>${instructor}</td>
+                     <td>
+                        <button onclick="editRow(this)" style="color: white; background-color: green; border: none; padding: 5px 10px; border-radius: 4px;">Edit</button>
+                         <button onclick="deleteRow(this)" style="color: white; background-color: red; border: none; padding: 5px 10px; border-radius: 4px;">Delete</button>
+                         
+                     </td>
+                 `;
+                 // Append the new row to the table
+                 tableBody.appendChild(newRow);
+             }
+     
+             // Reset the form after submission
+             document.querySelector('form').reset();
+         });
+     
+         // Function to edit table row
+function editRow(button) {
+    const table = document.querySelector('#savedDetails');
+    const rows = table.rows;
+    const editingRowIndex = button.parentNode.parentNode.rowIndex;
+
+    // Set 'data-editing' attribute to mark the row being edited
+    table.setAttribute('data-editing', editingRowIndex);
+
+    const cells = rows[editingRowIndex].cells;
+    // Populate form fields with row data for editing
+    document.querySelector('input[placeholder="first name"]').value = cells[0].innerText;
+    document.querySelector('input[placeholder="middle name"]').value = cells[1].innerText;
+    document.querySelector('input[placeholder="last name"]').value = cells[2].innerText;
+    document.querySelector('select').value = cells[3].innerText;
+    document.querySelector('input[type="date"]').value = cells[4].innerText;
+    document.querySelector('input[placeholder="contact"]').value = cells[5].innerText;
+    document.querySelector('input[placeholder="email"]').value = cells[6].innerText;
+    document.querySelector('input[placeholder="address"]').value = cells[7].innerText;
+    document.querySelector('select').value = cells[8].innerText;
+    document.querySelector('input[placeholder="instructor"]').value = cells[9].innerText;
+}
+
+     
+         // Function to delete table row
+         function deleteRow(button) {
+             const rowIndex = button.parentNode.parentNode.rowIndex;
+             document.querySelector("#savedDetails").deleteRow(rowIndex);
+         }
+     </script>
+   </body>
+</html>

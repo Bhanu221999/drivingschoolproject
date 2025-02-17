@@ -1,0 +1,54 @@
+body{
+	color:#6a6f8c;
+	background:#6a6f8c;
+	background-image: url('../asset/img/emirates\ logo.jpeg');
+    background-position: center; /* You can adjust 'top' as needed */
+	/* background-size: 85%; */
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+  
+  
+
+  .login-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 60%;
+    width: 100%; /* Set the desired width (adjust as needed) */
+    max-width: 1600px; /* Optional: Set a maximum width */
+    margin: 100 auto; /* Center the container horizontally */
+  }
+  
+ /* Base style for the button */
+button {
+    margin: 10px;
+    padding: 18px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: aliceblue;
+    border-radius: 4px;
+    background-color: #145660;
+    color: white;
+  }
+  
+  /* Additional CSS for glowing effect on button hover */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #e70228;
+    }
+    50% {
+      box-shadow: 0 0 20px #e7ef03;
+    }
+    100% {
+      box-shadow: 0 0 5px #02e820;
+    }
+  }
+  
+  button:hover {
+    animation: glow 1s infinite;
+  }
+  

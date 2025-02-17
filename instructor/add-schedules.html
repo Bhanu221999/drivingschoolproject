@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pass IT driving school</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="../asset/fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="../asset/css/adminlte.min.css">
+      <link rel="stylesheet" href="../asset/css/style.css">
+      <style>
+        #logo {
+      margin-left: -45px; /* Adjust this value as needed */
+      margin-bottom: -20px;
+    }
+    
+    </style>
+   </head>
+   <body class="hold-transition sidebar-mini layout-fixed">
+      <div class="wrapper">
+         <!-- Navbar -->
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="fullscreen" href="../login/first.html">
+                  <i class="fas fa-power-off"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- /.navbar -->
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgba(62,88,113);">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-link">
+                <img id="logo" src="../asset/img/emirates logo.jpeg" alt="DSMS Logo" width="320">
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+               <!-- Sidebar user panel (optional) -->
+               <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                  <div class="image">
+                     <img src="../asset/img/profile1.png" class="img-circle elevation-2" alt="User Image">
+                  </div>
+                  <div class="info">
+                     <a href="#" class="d-block">David</a>
+                  </div>
+               </div>
+               <!-- Sidebar Menu -->
+               <nav class="mt-2">
+                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                     <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                           <i class="nav-icon fa fa-tachometer-alt"></i>
+                           <p>
+                              Dashboard
+                           </p>
+                        </a>
+                    </li>
+                    <li class="nav-item animated bounceInRight">
+                       <a href="#" class="nav-link">
+                          <i class="nav-icon fas fa-book"></i>
+                          <p>
+                             Schedule
+                          </p>
+                          <i class="right fas fa-angle-left"></i>
+                       </a>
+                       <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                             <a href="add-schedules.html" class="nav-link">
+                                <i class="nav-icon fa fa-plus"></i>
+                                <p>Add</p>
+                             </a>
+                          
+                       </ul>
+                    </li>
+                     </li>
+                     <li class="nav-item">
+                        <a href="students.html" class="nav-link">
+                           <i class="nav-icon fa fa-users"></i>
+                           <p>
+                              Master List
+                           </p>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-chart-bar"></i>
+                           <p>
+                              Reports
+                           </p>
+                              <i class="right fas fa-angle-left"></i>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="add-report.html" class="nav-link">
+                                 <i class="nav-icon fa fa-plus"></i>
+                                 <p>Add</p>
+                              </a>
+                           
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+               <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+         </aside>
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+               <div class="container-fluid">
+                  <div class="row mb-2">
+                     <div class="col-sm-6 animated bounceInRight">
+                        <h1 class="m-0"><span class="fa fa-book"></span> Add Schedules</h1>
+                     </div>
+                     <!-- /.col -->
+                     <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                           <li class="breadcrumb-item active">Add Schedules</li>
+                        </ol>
+                     </div>
+                     <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+               </div>
+               <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <!-- Main content -->
+            <section class="content">
+               <div class="container-fluid">
+                  <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Schedules Information</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form id="scheduleForm">
+               <div class="card-body">
+                  <div class="row">
+                  <div class="col-md-12">
+                     <div class="card-header">
+                        <span class="fa fa-book"> Schedule Information</span>
+              </div>
+                  <div class="row">
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Schedule Code</label>
+                    <input type="text" class="form-control" placeholder="Schedule Code" name="scheduleCode" required>
+                  </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" class="form-control" name="date" required>
+                  </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                        <label>Student</label>
+                        <select class="form-control" name="instructor" required>
+                          <option>Mike</option>
+                          <option>Kristen Stewart</option>
+                        </select>
+                      </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Number of Slots</label>
+                    <input type="number" class="form-control" placeholder="slot number" name="numberOfSlots" required>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                <div class="form-group">
+                      <label>Lessons</label>
+                      <select class="form-control" name="lessons">
+                        <option>Introductory - 500£</option>
+                        <option>Standard - 1000£</option>
+                        <option>Pass-plus - 1500£</option>
+                      </select>
+                    </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Remarks</label>
+                    <input type="text" class="form-control" placeholder="remarks" name="remarks" required>
+                  </div>
+               </div>
+            </div>
+              </div>
+                  </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Save</button>
+               </div>
+            </form>
+         </div>
+         <section class="content">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                     <h3 class="card-title">Saved Details</h3>
+                  </div>
+                  <div class="card-body" style="overflow-x: auto;">
+                      <!-- Add a wrapper div to enable horizontal scrolling -->
+                      <div style="max-width: 100%; overflow-x: auto;">
+                          <table class="table" id="savedDetails">
+                            <!-- Table headers -->
+                            <thead>
+                                <tr>
+                                    <th>Schedule Code</th>
+                                    <th>Date</th>
+                                    <th>Student</th>
+                                    <th>Number of Slots</th>
+                                    <th>Lessons</th>
+                                    <th>Remarks</th>
+                                    <th>Action</th>
+                                    <!-- Add more table headers for other details -->
+                                </tr>
+                            </thead>
+                            <!-- Table body to be populated after form submission -->
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+         </section>
+         
+                        <!-- /.container-fluid -->
+                     </section>
+                     <!-- /.content -->
+                  </div>
+                  <!-- /.content-wrapper -->
+               </div>
+               <!-- ./wrapper -->
+               <!-- jQuery -->
+      <script src="../asset/jquery/jquery.min.js"></script>
+      <script src="../asset/js/adminlte.js"></script>
+      <script>
+         // Event listener for form submission
+         document.getElementById('scheduleForm').addEventListener('submit', function (e) {
+             e.preventDefault(); // Prevent default form submission
+     
+             // Collect form field values using FormData object
+             const formData = new FormData(this);
+     
+             // Check if a row is being edited
+             const table = document.querySelector('#savedDetails');
+             if (table.getAttribute('data-editing')) {
+                 const editingRowIndex = parseInt(table.getAttribute('data-editing'));
+                 const cells = table.rows[editingRowIndex].cells;
+     
+                 // Update the edited row with new data
+                 cells[0].innerText = formData.get('scheduleCode');
+                 cells[1].innerText = formData.get('date');
+                 cells[2].innerText = formData.get('instructor');
+                 cells[3].innerText = formData.get('numberOfSlots');
+                 cells[4].innerText = formData.get('lessons');
+                 cells[5].innerText = formData.get('remarks');
+     
+                 // Clear the 'data-editing' attribute after update
+                 table.removeAttribute('data-editing');
+             } else {
+                 // If no row is being edited, add a new row with form data
+                 const tableBody = document.querySelector('#savedDetails tbody');
+                 const newRow = document.createElement('tr');
+                 newRow.innerHTML = `
+                     <td>${formData.get('scheduleCode')}</td>
+                     <td>${formData.get('date')}</td>
+                     <td>${formData.get('instructor')}</td>
+                     <td>${formData.get('numberOfSlots')}</td>
+                     <td>${formData.get('lessons')}</td>
+                     <td>${formData.get('remarks')}</td>
+                     <td>
+                         <button onclick="editRow(this)" style="color: white; background-color: green; border: none; padding: 5px 10px; border-radius: 4px;">Edit</button>
+                         <button onclick="deleteRow(this)" style="color: white; background-color: red; border: none; padding: 5px 10px; border-radius: 4px;">Delete</button>
+                     </td>
+                 `;
+                 tableBody.appendChild(newRow);
+             }
+     
+             // Reset the form after submission
+             document.querySelector('form').reset();
+         });
+     
+         // Function to edit a table row
+         function editRow(button) {
+             const table = document.querySelector('#savedDetails');
+             const rows = table.rows;
+             const editingRowIndex = button.parentNode.parentNode.rowIndex;
+     
+             // Set 'data-editing' attribute to mark the row being edited
+             table.setAttribute('data-editing', editingRowIndex);
+     
+             const cells = rows[editingRowIndex].cells;
+             // Populate form fields with row data for editing
+             document.querySelector('input[name="scheduleCode"]').value = cells[0].innerText;
+             document.querySelector('input[name="date"]').value = cells[1].innerText;
+             document.querySelector('select[name="instructor"]').value = cells[2].innerText;
+             document.querySelector('input[name="numberOfSlots"]').value = cells[3].innerText;
+             document.querySelector('select[name="lessons"]').value = cells[4].innerText;
+             document.querySelector('input[name="remarks"]').value = cells[5].innerText;
+         }
+     
+         // Function to delete a table row
+         function deleteRow(button) {
+             const rowIndex = button.parentNode.parentNode.rowIndex;
+             document.querySelector("#savedDetails").deleteRow(rowIndex);
+         }
+     </script>
+     
+      
+      
+   </body>
+</html>

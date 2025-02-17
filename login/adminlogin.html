@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+
+         /* Add this CSS to position the GO BACK button */
+/* Add this CSS to position the Font Awesome icon */
+.go-back-btn {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    color: #333; /* Font Awesome icon color */
+    font-size: 24px; /* Adjust icon size as needed */
+    text-decoration: none;
+}
+
+.go-back-btn:hover {
+    color: #c6df02; /* Color on hover */
+}
+
+    </style>
+   
+
+</head>
+<body>
+<div class="login-wrap">
+    <div class="login-html">
+        <a href="first.html" class="go-back-btn"><i class="fa-solid fa-right-from-bracket fa-rotate-180" ></i></a> <!-- Added Font Awesome icon -->
+        <center>
+            <h1>Admin</h1>
+        </center>
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <form id="loginForm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" name="username" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" name="password" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const username = form.username.value;
+        const password = form.password.value;
+
+        const authenticated = authentication(username, password);
+
+        if (authenticated) {
+            window.location.href = "../admin/index.html";
+        } else {
+            alert("Wrong username or password.");
+        }
+    });
+
+    // Function for checking username and password
+    function authentication(username, password) {
+        return username === "Bhanu" && password === "Bhanu1234";
+    }
+</script>
+</body>
+</html>
